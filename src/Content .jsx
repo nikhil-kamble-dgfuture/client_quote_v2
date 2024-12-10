@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import QVODubbingForm from './components/QVODubbingForm';
-import AIDubbingForm from './components/AIDubbingForm';
-import TranslationForm from './components/TranslationForm';
-import Modal from "./components/Modal";  // Correct if Modal.jsx is in the same directory
+// import React, { useState } from 'react';
+// import QVODubbingForm from './components/QVODubbingForm';
+// import AIDubbingForm from './components/AIDubbingForm';
+// import TranslationForm from './components/TranslationForm';
+// import Modal from "./components/Modal";  // Correct if Modal.jsx is in the same directory
 
 // const Content = () => {
 //   const [serviceType, setServiceType] = useState('');
@@ -109,6 +109,12 @@ import Modal from "./components/Modal";  // Correct if Modal.jsx is in the same 
 // import Navbar from './components/Navbar';
 // import Footer from './components/Footer';
 
+import React, { useState } from 'react';
+import QVODubbingForm from './components/QVODubbingForm';
+import AIDubbingForm from './components/AIDubbingForm';
+import TranslationForm from './components/TranslationForm';
+import Modal from "./components/Modal";  // Correct if Modal.jsx is in the same directory
+
 function Content() {
     const [serviceType, setServiceType] = useState('');
     const [formData, setFormData] = useState(null);
@@ -121,8 +127,8 @@ function Content() {
             case 'English to French': return '₹1200 per minute';
             case 'English to German': return '₹1400 per minute';
             case 'Spanish to English': return '₹1000 per minute';
-            case 'French to English': return '₹1300 per minute';
-            case 'German to English': return '₹1500 per minute';
+            case 'French to English': return '₹1400 per minute';
+            case 'German to English': return '₹1400 per minute';
             default: return 'Rate not available';
         }
     };
